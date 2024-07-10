@@ -9,9 +9,6 @@ function gerarFaturaStr (fatura, pecas) {
         { style: "currency", currency: "BRL",
           minimumFractionDigits: 2 }).format(valor/100);
     }
-    const formato = new Intl.NumberFormat("pt-BR",
-                          { style: "currency", currency: "BRL",
-                            minimumFractionDigits: 2 }).format;
 
     function getPeca(apresentacao) {
       return pecas[apresentacao.id];
